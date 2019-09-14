@@ -3939,6 +3939,13 @@ react-visjs-graph2d@^1.0.1:
     lodash "^4.17.11"
     vis "^4.20.1"
 
+react-visjs-timeline@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/react-visjs-timeline/-/react-visjs-timeline-1.6.0.tgz#d741c3625caa4d04ec00bd0ad41d582c7e5792b6"
+  integrity sha512-pGjo/XaqFBWmEARrebRClSBn9oaTtSA2m1WPyNSGJtJq+s8odZ1Gcq9FW4bIYx0HS9SPYwWpSAWRysSByi0EGw==
+  dependencies:
+    lodash "^4.17.4"
+
 react@16.9.0:
   version "16.9.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.9.0.tgz#40ba2f9af13bc1a38d75dbf2f4359a5185c4f7aa"

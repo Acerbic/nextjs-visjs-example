@@ -1,5 +1,5 @@
 {
-  "name": "c3-nextjs",
+  "name": "visjs-nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,6 +17,7 @@
     "react-dom": "16.9.0",
     "react-no-ssr": "^1.1.0",
     "react-visjs-graph2d": "^1.0.1",
+    "react-visjs-timeline": "^1.6.0",
     "typescript": "^3.6.3",
     "vis-timeline": "^5.1.0"
   }
