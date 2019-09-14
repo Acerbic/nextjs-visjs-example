@@ -7,7 +7,7 @@ import Nav from "../components/nav";
 /**
  * Have to have ssr: false since visjs touches global window object on module load
  */
-const Graph = dynamic(() => import("../components/graph"), {
+const Graph = dynamic(() => import("../components/react-visjs-graph2d"), {
     ssr: false,
 });
 
@@ -20,8 +20,9 @@ const Home = () => (
         <Nav />
 
         <div className="hero">
-            <h1 className="title">Loading Visjs component with dynamic()!</h1>
-            <p className="description">dynamic() with ssr:false.</p>
+            <h1 className="title">
+                Loading react-visjs-graph2d component with dynamic()!
+            </h1>
             <div className="row">
                 <Graph />
             </div>
@@ -47,6 +48,7 @@ const Home = () => (
                 max-width: 880px;
                 margin: 80px auto 40px;
                 display: flex;
+                display: block;
                 flex-direction: row;
                 justify-content: space-around;
             }

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import { DataSet, Timeline } from "vis-timeline";
+// import { DataSet, Timeline } from "vis-timeline";
+import vis from "vis-timeline/dist/vis-timeline-graph2d.min.js";
 import "vis-timeline/dist/vis-timeline-graph2d.min.css";
 
 export function Graph() {
@@ -8,7 +9,7 @@ export function Graph() {
         var container = document.getElementById("visualization");
 
         // Create a DataSet (allows two way data-binding)
-        var items = new DataSet([
+        var items = new vis.DataSet([
             { id: 1, content: "item 1", start: "2014-04-20" },
             { id: 2, content: "item 2", start: "2014-04-14" },
             { id: 3, content: "item 3", start: "2014-04-18" },
@@ -31,7 +32,7 @@ export function Graph() {
         var options = {};
 
         // Create a Timeline
-        var timeline = new Timeline(container, items, options);
+        var timeline = new vis.Timeline(container, items, options);
     }, []);
 
     return (
