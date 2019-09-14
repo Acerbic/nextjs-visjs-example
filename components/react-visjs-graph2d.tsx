@@ -2,11 +2,10 @@ import React, { Component } from "react";
 import dynamic from "next/dynamic";
 
 import moment from "moment";
-import VisGraph2d from "react-visjs-graph2d";
 
-// const VisGraph2d = dynamic(() => import("react-visjs-graph2d"), {
-//     ssr: false,
-// });
+const VisGraph2d: any = dynamic(() => import("react-visjs-graph2d"), {
+    ssr: false,
+});
 
 const example_one = {
     options: {
