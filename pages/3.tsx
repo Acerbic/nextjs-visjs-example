@@ -6,7 +6,7 @@ import Graph from "../components/react-visjs-timeline";
 interface S {
     count: number;
 }
-class Home2 extends React.Component<{}, S> {
+class Home3 extends React.Component<{}, S> {
     state: S = {
         count: 0,
     };
@@ -15,7 +15,7 @@ class Home2 extends React.Component<{}, S> {
         return (
             <div>
                 <Head>
-                    <title>Home</title>
+                    <title>Home 3</title>
                 </Head>
 
                 <Nav />
@@ -29,9 +29,10 @@ class Home2 extends React.Component<{}, S> {
                 </button>
 
                 <div className="hero">
-                    <h1 className="title">
-                        Loading react-visjs-timeline component with dynamic()!
-                    </h1>
+                    <h1 className="title">react-visjs-timeline component</h1>
+                    <p className="description">
+                        Using dynamic() with ssr:false
+                    </p>
                     <div className="row">
                         <Graph />
                     </div>
@@ -89,4 +90,4 @@ class Home2 extends React.Component<{}, S> {
     }
 }
 
-export default Home2;
+export default Home3;

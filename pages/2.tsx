@@ -1,16 +1,7 @@
 import React from "react";
-import Link from "next/link";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import Nav from "../components/nav";
 import Graph from "../components/react-visjs-graph2d";
-
-/**
- * Have to have ssr: false since visjs touches global window object on module load
- */
-// const Graph = dynamic(() => import("../components/react-visjs-graph2d"), {
-//     ssr: false,
-// });
 
 interface S {
     count: number;
@@ -24,7 +15,7 @@ class Home2 extends React.Component<{}, S> {
         return (
             <div>
                 <Head>
-                    <title>Home</title>
+                    <title>Home 2</title>
                 </Head>
 
                 <Nav />
@@ -38,9 +29,11 @@ class Home2 extends React.Component<{}, S> {
                 </button>
 
                 <div className="hero">
-                    <h1 className="title">
-                        Loading react-visjs-graph2d component with dynamic()!
-                    </h1>
+                    <h1 className="title">react-visjs-graph2d component</h1>
+                    <p className="description">
+                        Using dynamic() with ssr:false
+                    </p>
+
                     <div className="row">
                         <Graph />
                     </div>

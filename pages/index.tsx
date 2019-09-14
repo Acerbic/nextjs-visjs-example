@@ -2,14 +2,12 @@ import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Nav from "../components/nav";
-
 /**
  * Have to have ssr: false since visjs touches global window object on module load
  */
 const Graph = dynamic(() => import("../components/graph"), {
     ssr: false,
 });
-
 const Home = () => (
     <div>
         <Head>
@@ -19,8 +17,8 @@ const Home = () => (
         <Nav />
 
         <div className="hero">
-            <h1 className="title">Loading Visjs component with dynamic()!</h1>
-            <p className="description">dynamic() with ssr:false.</p>
+            <h1 className="title">Integrating raw Visjs library</h1>
+            <p className="description">Using dynamic() with ssr:false</p>
             <div className="row">
                 <Graph />
             </div>
